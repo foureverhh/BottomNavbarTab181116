@@ -17,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
+        //To make home fragment as default fragment
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container,new HomeFragment())
+                .addToBackStack(null)
+                .commit();
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
