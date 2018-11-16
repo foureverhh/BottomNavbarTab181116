@@ -35,9 +35,16 @@ public class MainActivity extends AppCompatActivity {
                             selectedFragment = new SearchFragment();
                             break;
                     }
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.fragment_container,selectedFragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+                    /*
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.fragment_container,selectedFragment)
                     .commit();
+                    */
                     return true;
                 }
             };
