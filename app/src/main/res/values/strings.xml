@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BottomNavbarTab181116</string>
+    <string name="home_nav_bottom">Home</string>
+    <string name="favorites_nav_bottom">Favorites</string>
+    <string name="search_nav_bottom">Search</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="favorite_fragment">Favorite Fragment</string>
+    <string name="search_fragment">Search Fragment</string>
+</resources>
